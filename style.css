@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/*new stuff*/
+
+[data-when-to-go] {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1em 1.5em;
+  color: #fff;
+  font-style: italic;
+  margin: 0 0.1em 1em 0;
+}
+
+@media (min-width: 767px) {
+  [data-when-to-go] {
+    padding: 1em;
+  }
+}
+
+[data-when-to-go] .when-to-go-value {
+  display: none;
+}
+
+[data-when-to-go="excellent"] {
+  background-color: #2f896f;
+}
+
+[data-when-to-go="good"] {
+  background-color: #80b8a9;
+}
+
+[data-when-to-go="fair"] {
+  background-color: #bfdcd4;
+}
